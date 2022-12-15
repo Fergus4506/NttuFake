@@ -1,0 +1,131 @@
+body{
+    margin: 0 10%;
+    padding: 0;
+    background-color:white;
+}
+body .FirstLine{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    margin-top: 10px;
+    background-color:#F3F9D2 ;
+    border-top-left-radius:15px ;
+    border-top-right-radius: 15px;
+}
+body .FirstLine img{
+    width:50px;
+    height: 50px;
+    margin:5px 0 0 5px;
+}
+body .FirstLine .t{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+body .FirstLine .t a{
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+body .FirstLine .t a:link{
+    color: #000000;
+}
+body .FirstLine .t a:visited{
+    color: #000000;
+}
+#NV{
+    margin-left:auto;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+    overflow: hidden;
+    transform: translateZ(20px);
+    z-index: 20;
+    float: right;
+    display:block;
+    line-height:35px;
+}
+#NV.active{
+    background: #b7b7b7;
+    width: 125px;
+    height: 275px;
+    border-radius: 15px;
+    transform: translateZ(20px);
+    z-index: 20;
+}
+#NV a{
+    position: relative;
+    margin: 10px;
+    right: -4px;
+    box-shadow: 3px 2px 0 #000000;
+    cursor: pointer;
+}
+#NV a:link{
+    color: #000000;
+}
+#NV a:visited{
+    color: #000000;
+}
+#navigation{
+    margin-left:auto;
+    width: 50px;
+    height: 50px;
+    background: #ADADAD;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.2s;
+    
+}
+#navigation.active{
+    background: #b7b7b7;
+}
+#navigation::before{
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 3px;
+    background: #000000;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #000000;
+    transition: 0.2s;
+}
+#navigation.active::before{
+    transform: translateY(0)rotate(45deg);
+    box-shadow: 0 0 0 #000000;
+}
+#navigation::after{
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 3px;
+    background: #000000;
+    transform: translateY(10px);
+    transition: 0.2s;
+}
+#navigation.active::after{
+    transform: translateY(0)rotate(-45deg);
+}
+marquee{
+    font-size: 25px;
+    margin: 0;
+}
+.Second marquee img{
+    height: 25px;
+    width: 25px;
+    margin-top:10px;
+}
+.Second{
+    z-index:10;
+}
+#images img{
+    height: 150px;
+    display:block;
+    margin: auto;
+}
+.photo_shower{
+    background-color: #C0D684;   
+}
