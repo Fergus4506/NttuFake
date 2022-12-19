@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>NTTU-Sports Competition</title>
+        <link rel="stylesheet" type="text/css" href="../baseResourse/baseFormat.css">
+        <link rel="stylesheet" type="text/css" href="transinformation.css">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <!-- JQuery lightSlider v1.1.6 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet"  />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="yX4gFuli"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="oc2NXaL4"></script>
+    </head>
+    <body>
+        <div class="FirstLine">
+            <img src="../baseResourse/NTTU_school.png">
+            <div class="t">
+                <a href="../Main_page/Main_Page.html">NTTU-Sports Competition</a>
+            </div>
+            <div id="NV">
+                <div id="navigation"></div>
+                <div class="project">
+                    <a href="../new/new_page.html"><img src="../baseResourse/newIcon.png" style="height: 20px;width:20px;">最新消息</a>
+                    <a href="../join/joinInformation.html"><img src="../baseResourse/messengerIcon.png" style="height: 20px;width:20px;">報名資訊</a>
+                    <a href="../timeLine/TimeLine.html"><img src="../baseResourse/timelineIcon.png"style="height: 20px;width:20px;">時刻表</a>
+                    <a href="../trans/transInformation.html"><img src="../baseResourse/tramIcon.png" style="height: 20px;width:20px;">交通資訊</a>
+                    <a href="../friend/friendLink.html"><img src="../baseResourse/friendsIcon.png" style="height: 20px;width:20px;">友情連結</a>
+                    <a href="../Forschool/ForSchool.html"><img src="../baseResourse/informationIcon.png" style="height: 20px;width:20px;">關於東大</a>
+                </div>
+            </div>
+            <script>
+                const NV=document.getElementById('NV');
+                const navigation=document.getElementById('navigation');
+                NV.onclick=function(){
+                    NV.classList.toggle('active');
+                    navigation.classList.toggle('active');
+                }
+            </script>
+        </div>
+
+        <div class="Second">
+            <marquee bgcolor="#c3e77f" height="50px" scrollamount="7">
+                <img src="../baseResourse/NTTU_school.png">
+                歡迎光臨本網站，目前為DOM模式
+            </marquee>
+        </div>
+        <div class="photo_shower">
+            <ul id="images">
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+            </ul>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $("#images").lightSlider({
+                        item: 3,
+                        autoWidth: true,
+                        slideMove: 1, // slidemove will be 1 if loop is true
+                        slideMargin: 10,
+                 
+                        addClass: '',
+                        mode: "slide",
+                        useCSS: true,
+                        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+                        easing: 'linear', //'for jquery animation',////
+                 
+                        speed: 500, //ms'
+                        auto: true,
+                        loop: true,
+                        slideEndAnimation: true,
+                        pause: 2000,
+                 
+                        keyPress: false,
+                        controls: true,
+                        prevHtml: '',
+                        nextHtml: '',
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="First_page_main">
+            <div class="button_in">
+                <pre>快速瀏覽各地至台東大學の路線</pre>
+                <button class="swim">知本火車站</button>
+                <script>
+                    var btn=document.querySelector(".swim")
+                    btn.onclick=function(){
+                        document.getElementById("map_in").innerHTML='<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1F9TCVRWvey5QX88sdagCn0dRMXt-gug&ehbc=2E312F" width="640" height="480"></iframe>'
+                    }
+                </script>
+                <br>
+                <br>
+                <button class="marathon">台東火車站</button>
+                <script>
+                    var btn=document.querySelector(".marathon")
+                    var SportName=document.querySelector(".sportName")
+                    btn.onclick=function(){
+                        document.getElementById("map_in").innerHTML='<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1POcDDn5mYUjnE7NAhcMKdBWiG9NmV5g&ehbc=2E312F" width="640" height="480"></iframe>'
+                    }
+                </script>
+                <br>
+                <br>
+                <button class="catch">台東機場</button>
+                <script>
+                    var btn=document.querySelector(".catch")
+                    var SportName=document.querySelector(".sportName")
+                    btn.onclick=function(){
+                        document.getElementById("map_in").innerHTML='<iframe src="https://www.google.com/maps/d/u/0/embed?mid=13VTaN29MqkJXr9cZOdGbs4Kx1xYbyjc&ehbc=2E312F" width="640" height="480"></iframe>'
+                    }
+                </script>
+                <br>
+                <br>
+                <button class="Hurdles">台東大學位置</button>
+                <script>
+                    var btn=document.querySelector(".Hurdles")
+                    btn.onclick=function(){
+                        document.getElementById("map_in").innerHTML='<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.7752201178982!2d121.06662226496238!3d22.73659468509862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb9476f5d5c37%3A0x39a51f204cad3662!2z5ZyL56uL6Ie65p2x5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1671327781666!5m2!1szh-TW!2stw" width="640" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+                    }
+                </script>
+            </div>
+            <div id="map_in">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.7752201178982!2d121.06662226496238!3d22.73659468509862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb9476f5d5c37%3A0x39a51f204cad3662!2z5ZyL56uL6Ie65p2x5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1671327781666!5m2!1szh-TW!2stw" width="640" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+<!--
+ *                                         ,s555SB@@&                          
+ *                                      :9H####@@@@@Xi                        
+ *                                     1@@@@@@@@@@@@@@8                       
+ *                                   ,8@@@@@@@@@B@@@@@@8                      
+ *                                  :B@@@@X3hi8Bs;B@@@@@Ah,                   
+ *             ,8i                  r@@@B:     1S ,M@@@@@@#8;                 
+ *            1AB35.i:               X@@8 .   SGhr ,A@@@@@@@@S                
+ *            1@h31MX8                18Hhh3i .i3r ,A@@@@@@@@@5               
+ *            ;@&i,58r5                 rGSS:     :B@@@@@@@@@@A               
+ *             1#i  . 9i                 hX.  .: .5@@@@@@@@@@@1               
+ *              sG1,  ,G53s.              9#Xi;hS5 3B@@@@@@@B1                
+ *               .h8h.,A@@@MXSs,           #@H1:    3ssSSX@1                  
+ *               s ,@@@@@@@@@@@@Xhi,       r#@@X1s9M8    .GA981               
+ *               ,. rS8H#@@@@@@@@@@#HG51;.  .h31i;9@r    .8@@@@BS;i;          
+ *                .19AXXXAB@@@@@@@@@@@@@@#MHXG893hrX#XGGXM@@@@@@@@@@MS        
+ *                s@@MM@@@hsX#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&,      
+ *              :GB@#3G@@Brs ,1GM@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B,     
+ *            .hM@@@#@@#MX 51  r;iSGAM@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8     
+ *          :3B@@@@@@@@@@@&9@h :Gs   .;sSXH@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:    
+ *      s&HA#@@@@@@@@@@@@@@M89A;.8S.       ,r3@@@@@@@@@@@@@@@@@@@@@@@@@@@r    
+ *   ,13B@@@@@@@@@@@@@@@@@@@5 5B3 ;.         ;@@@@@@@@@@@@@@@@@@@@@@@@@@@i    
+ *  5#@@#&@@@@@@@@@@@@@@@@@@9  .39:          ;@@@@@@@@@@@@@@@@@@@@@@@@@@@;    
+ *  9@@@X:MM@@@@@@@@@@@@@@@#;    ;31.         H@@@@@@@@@@@@@@@@@@@@@@@@@@:    
+ *   SH#@B9.rM@@@@@@@@@@@@@B       :.         3@@@@@@@@@@@@@@@@@@@@@@@@@@5    
+ *     ,:.   9@@@@@@@@@@@#HB5                 .M@@@@@@@@@@@@@@@@@@@@@@@@@B    
+ *           ,ssirhSM@&1;i19911i,.             s@@@@@@@@@@@@@@@@@@@@@@@@@@S   
+ *              ,,,rHAri1h1rh&@#353Sh:          8@@@@@@@@@@@@@@@@@@@@@@@@@#:  
+ *            .A3hH@#5S553&@@#h   i:i9S          #@@@@@@@@@@@@@@@@@@@@@@@@@A.
+ *
+ *
+ *    又看源码，看你妹妹呀！
+-->
+        <div class="bottom">
+            <!-- <a href="https://www.flaticon.com/free-icons/new" title="new icons">New icons created by Pixel perfect - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/message" title="message icons">Message icons created by Freepik - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/timeline" title="timeline icons">Timeline icons created by nahumam - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/tram" title="tram icons">Tram icons created by Pixel perfect - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/friends" title="friends icons">Friends icons created by Freepik - Flaticon</a>\
+            <br>
+            <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a> -->
+        </div>
+    </body>
+</html>

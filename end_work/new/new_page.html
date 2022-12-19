@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>NTTU-Sports Competition</title>
+        <link rel="stylesheet" type="text/css" href="../baseResourse/baseFormat.css">
+        <link rel="stylesheet" type="text/css" href="new_page.css">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <!-- JQuery lightSlider v1.1.6 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet"  />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="yX4gFuli"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="oc2NXaL4"></script>
+    </head>
+    <body>
+        <div class="FirstLine">
+            <img src="../baseResourse/NTTU_school.png">
+            <div class="t">
+                <a href="../Main_page/Main_Page.html">NTTU-Sports Competition</a>
+            </div>
+            <div id="NV">
+                <div id="navigation"></div>
+                <div class="project">
+                    <a href="../new/new_page.html"><img src="../baseResourse/newIcon.png" style="height: 20px;width:20px;">最新消息</a>
+                    <a href="../join/joinInformation.html"><img src="../baseResourse/messengerIcon.png" style="height: 20px;width:20px;">報名資訊</a>
+                    <a href="../timeLine/TimeLine.html"><img src="../baseResourse/timelineIcon.png"style="height: 20px;width:20px;">時刻表</a>
+                    <a href="../trans/transInformation.html"><img src="../baseResourse/tramIcon.png" style="height: 20px;width:20px;">交通資訊</a>
+                    <a href="../friend/friendLink.html"><img src="../baseResourse/friendsIcon.png" style="height: 20px;width:20px;">友情連結</a>
+                    <a href="../Forschool/ForSchool.html"><img src="../baseResourse/informationIcon.png" style="height: 20px;width:20px;">關於東大</a>
+                </div>
+            </div>
+            <script>
+                const NV=document.getElementById('NV');
+                const navigation=document.getElementById('navigation');
+                NV.onclick=function(){
+                    NV.classList.toggle('active');
+                    navigation.classList.toggle('active');
+                }
+            </script>
+        </div>
+
+        <div class="Second">
+            <marquee bgcolor="#c3e77f" height="50px" scrollamount="7">
+                <img src="../baseResourse/NTTU_school.png">
+                歡迎光臨本網站，目前為DOM模式
+            </marquee>
+        </div>
+        <div class="photo_shower">
+            <ul id="images">
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+            </ul>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $("#images").lightSlider({
+                        item: 3,
+                        autoWidth: true,
+                        slideMove: 1, // slidemove will be 1 if loop is true
+                        slideMargin: 10,
+                 
+                        addClass: '',
+                        mode: "slide",
+                        useCSS: true,
+                        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+                        easing: 'linear', //'for jquery animation',////
+                 
+                        speed: 500, //ms'
+                        auto: true,
+                        loop: true,
+                        slideEndAnimation: true,
+                        pause: 2000,
+                 
+                        keyPress: false,
+                        controls: true,
+                        prevHtml: '',
+                        nextHtml: '',
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="First_page_main">
+            <div class="WTF"></div>
+        </div>
+        
+        <div class="bottom">
+            <!-- <a href="https://www.flaticon.com/free-icons/new" title="new icons">New icons created by Pixel perfect - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/message" title="message icons">Message icons created by Freepik - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/timeline" title="timeline icons">Timeline icons created by nahumam - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/tram" title="tram icons">Tram icons created by Pixel perfect - Flaticon</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/friends" title="friends icons">Friends icons created by Freepik - Flaticon</a>\
+            <br>
+            <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a> -->
+        </div>
+    </body>
+</html>
