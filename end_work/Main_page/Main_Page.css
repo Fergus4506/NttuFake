@@ -21,9 +21,6 @@
 .First_page_main button:hover{
     background-color: #b7f1de;
 }
-.text_word{
-    font-size: 25px;
-}
 .First_page_main .Title_word{
     font-size: 50px;
     border: 5px #1f3f34 solid;

@@ -22,12 +22,14 @@
             </div>
             <div id="NV">
                 <div id="navigation"></div>
-                <a href="../new/new_page.html"><img src="../baseResourse/newIcon.png" style="height: 20px;width:20px;">最新消息</a>
-                <a href="../join/joinInformation.html"><img src="../baseResourse/messengerIcon.png" style="height: 20px;width:20px;">報名資訊</a>
-                <a href="../timeLine/TimeLine.html"><img src="../baseResourse/timelineIcon.png"style="height: 20px;width:20px;">時刻表</a>
-                <a href="../trans/transInformation.html"><img src="../baseResourse/tramIcon.png" style="height: 20px;width:20px;">交通資訊</a>
-                <a href="../friend/friendLink.html"><img src="../baseResourse/friendsIcon.png" style="height: 20px;width:20px;">友情連結</a>
-                <a href="../Forschool/ForSchool.html"><img src="../baseResourse/informationIcon.png" style="height: 20px;width:20px;">關於東大</a>
+                <div class="project">
+                    <a href="../join/joinInformation.html"><img src="../baseResourse/messengerIcon.png" style="height: 20px;width:20px;">報名資訊</a>
+                    <a href="../timeLine/TimeLine.html"><img src="../baseResourse/timelineIcon.png"style="height: 20px;width:20px;">時刻表</a>
+                    <a href="../trans/transInformation.html"><img src="../baseResourse/tramIcon.png" style="height: 20px;width:20px;">交通資訊</a>
+                    <a href="../friend/friendLink.html"><img src="../baseResourse/friendsIcon.png" style="height: 20px;width:20px;">友情連結</a>
+                    <a href="../Forschool/ForSchool.html"><img src="../baseResourse/informationIcon.png" style="height: 20px;width:20px;">關於東大</a>
+                    <a href="../new/new_page.html"><img src="../baseResourse/photo.png" style="height: 20px;width:20px;">圖片來源</a>
+                </div>
             </div>
             <script>
                 const NV=document.getElementById('NV');
@@ -91,6 +93,7 @@
         
         <div class="First_page_main">
             <div class="Title_word">活動地圖</div>
+            <h3>點擊下方按鈕可快速瀏覽賽事地點</h3>
             <img class="schoolMap" src="school_map.jpg">
             <div>
                 <button class="swim">泳渡靜心湖</button>
@@ -98,8 +101,7 @@
                     var btn=document.querySelector(".swim")
                     var map=document.querySelector(".schoolMap")
                     btn.onclick=function(){
-                        map.src="school_map.jpg"
-                        document.getElementById("text_word").textContent="測試之一"
+                        map.src="school_map_3.jpg"
                     }
                 </script>
                 <button class="marathon">環校馬拉松</button>
@@ -107,8 +109,7 @@
                     var btn=document.querySelector(".marathon")
                     var map=document.querySelector(".schoolMap")
                     btn.onclick=function(){
-                        map.src="../baseResourse/TA.jpg"
-                        document.getElementById("text_word").textContent="測試之二"
+                        map.src="school_map_1.jpg"
                     }
                 </script>
                 <button class="catch">抓捕靜心湖水怪</button>
@@ -116,8 +117,7 @@
                     var btn=document.querySelector(".catch")
                     var map=document.querySelector(".schoolMap")
                     btn.onclick=function(){
-                        map.src="../baseResourse/TB.jpg"
-                        document.getElementById("text_word").textContent="測試之三"
+                        map.src="school_map_3.jpg"
                     }
                 </script>
                 <button class="Hurdles">山豬障礙跨欄</button>
@@ -125,13 +125,9 @@
                     var btn=document.querySelector(".Hurdles")
                     var map=document.querySelector(".schoolMap")
                     btn.onclick=function(){
-                        map.src="../baseResourse/TC.jpg"
-                        document.getElementById("text_word").textContent="測試之四"
+                        map.src="school_map_2.jpg"
                     }
                 </script>
-            </div>
-            <div id="text_word">
-                
             </div>
             
         </div>

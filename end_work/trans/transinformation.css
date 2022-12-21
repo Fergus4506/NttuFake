@@ -13,6 +13,12 @@
 .button_in pre{
     font-size: 24px;
 }
+.text_in{
+    float: right;
+    font-size: 30px;
+    margin-right: 90px;
+    margin-top: 50px;
+}
 .First_page_main button{
     transition-duration: 0.5s;
     background-color: #61e4b8;
