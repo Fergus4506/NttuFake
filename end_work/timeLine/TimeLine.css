@@ -7,13 +7,18 @@
     align-items: center;
 }
 .text_in th{
-    font-size: 30px;
+    font-size: 35px;
 }
 .text_in{
-    font-size: 24px;
+    font-size: 26px;
     transition: 0.5s;
     text-align: center;
     border-spacing: 15px 20px;
+}
+table{
+    border: 2px #000000 solid;
+    background-color: #a6eb8b;
+    margin: 20px;
 }
 .bottom{
     clear: both;
