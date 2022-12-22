@@ -52,15 +52,8 @@
                 <li><img src="../baseResourse/TA.jpg"></li>
                 <li><img src="../baseResourse/TB.jpg"></li>
                 <li><img src="../baseResourse/TC.jpg"></li>
-                <li><img src="../baseResourse/TA.jpg"></li>
-                <li><img src="../baseResourse/TB.jpg"></li>
-                <li><img src="../baseResourse/TC.jpg"></li>
-                <li><img src="../baseResourse/TA.jpg"></li>
-                <li><img src="../baseResourse/TB.jpg"></li>
-                <li><img src="../baseResourse/TC.jpg"></li>
-                <li><img src="../baseResourse/TA.jpg"></li>
-                <li><img src="../baseResourse/TB.jpg"></li>
-                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TD.jpg"></li>
+                <li><img src="../baseResourse/TE.jpg"></li>
             </ul>
             <script type="text/javascript">
                 $(document).ready(function() {
@@ -68,7 +61,7 @@
                         item: 3,
                         autoWidth: true,
                         slideMove: 1, // slidemove will be 1 if loop is true
-                        slideMargin: 10,
+                        slideMargin: 0,
                  
                         addClass: '',
                         mode: "slide",
@@ -101,6 +94,7 @@
                         document.getElementById("sportName").textContent="運動項目:泳渡靜心湖"
                         document.getElementById("sportTime").textContent="舉辦時間:2023/3/6 14:00-17:00"
                         document.getElementById("sportIntroduction").textContent="賽事內容簡介:本校一年一度的泳渡靜心湖大賽今年依然盛大舉辦，我們會從圖書館開始直線游到對岸，本次活動分為男子組、女子組和教師組，每組選取前三名作為冠軍季軍和亞軍，最後會頒發給每組前三名獎牌。"
+                        document.getElementById("sportDT").textContent="賽事組別:男子組 女子組"
                     }
                 </script>
                 <button class="marathon">環校馬拉松</button>
@@ -111,6 +105,7 @@
                         document.getElementById("sportName").textContent="運動項目:環校馬拉松"
                         document.getElementById("sportTime").textContent="舉辦時間:2023/3/6 8:00-12:00"
                         document.getElementById("sportIntroduction").textContent="賽事內容簡介:今年的馬拉松增加了許多距離和挑戰性，我們會從籃球場出發以環校一大圈的方式來舉辦，會從台東大學出發至知本火車站後再回來，一圈大概為15KM，最先跑到的前三名會頒發獎狀，如果皆沒有得名就取跑的距離最遠的三個頒發獎狀，路上會設置補給站提供水和防疫湯。"
+                        document.getElementById("sportDT").textContent=""
                     }
                 </script>
                 <button class="catch">抓捕靜心湖水怪</button>
@@ -120,7 +115,8 @@
                         document.querySelector(".sportPhoto").src="catch.jpg"
                         document.getElementById("sportName").textContent="運動項目:抓捕靜心湖水怪"
                         document.getElementById("sportTime").textContent="舉辦時間:2023/3/6 8:00-12:00"
-                        document.getElementById("sportIntroduction").textContent="賽事內容簡介:校園驚傳在靜心湖中有尼斯湖水怪，請各位同學利用兩個人一組利用獨木舟去拍攝和抓捕尼斯湖水怪，本活動皆會提供前三名抓到的隊伍神秘獎品，有拍攝到尼斯湖水怪的蹤影的隊伍也會提供參加獎。"
+                        document.getElementById("sportIntroduction").textContent="賽事內容簡介:校園驚傳在鏡心湖中有尼斯湖水怪，請各位同學利用兩個人一組利用獨木舟去拍攝和抓捕尼斯湖水怪，本活動皆會提供每個小組前三名抓到水怪的隊伍神秘獎品，有拍攝到尼斯湖水怪的蹤影的隊伍也會提供參加獎(抽獎卷一張)。"
+                        document.getElementById("sportDT").textContent="賽事組別:孩童組 親子組 男子組 女子組"
                     }
                 </script>
                 <button class="Hurdles">山豬障礙跨欄</button>
@@ -132,6 +128,7 @@
                         document.getElementById("sportName").textContent="運動項目:山豬障礙跨欄"
                         document.getElementById("sportTime").textContent="舉辦時間:2023/3/6 8:00-12:00"
                         document.getElementById("sportIntroduction").textContent="賽事內容簡介:要參加本競賽需要剛入學發放的山豬通行許可證才能參加，在賽前要先挑選適合自己的坐騎山豬，如果沒有坐騎的話主辦方會提供學校飼養的山豬，本活動舉辦地點在田徑場，總共賽程是800公尺(兩圈操場)，路上會有跨欄需要跨越前進。"
+                        document.getElementById("sportDT").textContent="賽事組別:男子組 女子組"
                     }
                 </script>
             </div>
@@ -141,7 +138,8 @@
                 <p id="sportName">運動項目:泳渡靜心湖</p>
                 <p id="sportTime">舉辦時間:2023/3/6 14:00-17:00</p>
                 <p id="sportIntroduction">賽事內容簡介:泳渡鏡心湖是為了強健同學的體魄而設立的，該賽事須從鏡心湖的左側游向鏡心湖的右側，該運動不建議患有呼吸道疾病和過敏的人參加。</p>
-                <p>報名請填寫下方表單:</p>
+                <p id="sportDT">賽事組別:男子組 女子組</p>
+                <p>報名請填寫下方表單(後續會再通知分組細項):</p>
                 <form>
                     <input class="needChange" placeholder="你的姓名">
                     <input class="needChange" placeholder="身分證字號">
@@ -152,6 +150,7 @@
                         <input type="radio" name="sex" value="girl">女性
                         <input type="radio" name="sex" value="no">不方便填寫
                     </div>
+                    <input class="needChange" placeholder="email">
                     <input type="submit" value="傳送資料">
                 </form>
                 

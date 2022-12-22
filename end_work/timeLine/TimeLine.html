@@ -1,153 +1,190 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>NTTU-Sports Competition</title>
-        <link rel="stylesheet" type="text/css" href="../baseResourse/baseFormat.css">
-        <link rel="stylesheet" type="text/css" href="TimeLine.css">
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <!-- JQuery lightSlider v1.1.6 -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet"  />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="yX4gFuli"></script>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="oc2NXaL4"></script>
-    </head>
-    <body>
-        <div class="FirstLine">
-            <img src="../baseResourse/NTTU_school.png">
-            <div class="t">
-                <a href="../Main_page/Main_Page.html">NTTU-Sports Competition</a>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NTTU-Sports Competition</title>
+    <link rel="stylesheet" type="text/css" href="../baseResourse/baseFormat.css">
+    <link rel="stylesheet" type="text/css" href="TimeLine.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- JQuery lightSlider v1.1.6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0"
+        nonce="yX4gFuli"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0"
+        nonce="oc2NXaL4"></script>
+</head>
+
+<body>
+    <div class="FirstLine">
+        <img src="../baseResourse/NTTU_school.png">
+        <div class="t">
+            <a href="../Main_page/Main_Page.html">NTTU-Sports Competition</a>
+        </div>
+        <div id="NV">
+            <div id="navigation"></div>
+            <div class="project">
+                <a href="../join/joinInformation.html"><img src="../baseResourse/messengerIcon.png"
+                        style="height: 20px;width:20px;">報名資訊</a>
+                <a href="../timeLine/TimeLine.html"><img src="../baseResourse/timelineIcon.png"
+                        style="height: 20px;width:20px;">時刻表</a>
+                <a href="../trans/transInformation.html"><img src="../baseResourse/tramIcon.png"
+                        style="height: 20px;width:20px;">交通資訊</a>
+                <a href="../friend/friendLink.html"><img src="../baseResourse/friendsIcon.png"
+                        style="height: 20px;width:20px;">友情連結</a>
+                <a href="../Forschool/ForSchool.html"><img src="../baseResourse/informationIcon.png"
+                        style="height: 20px;width:20px;">關於東大</a>
+                <a href="../new/new_page.html"><img src="../baseResourse/photo.png"
+                        style="height: 20px;width:20px;">圖片來源</a>
             </div>
-            <div id="NV">
-                <div id="navigation"></div>
-                <div class="project">
-                    <a href="../join/joinInformation.html"><img src="../baseResourse/messengerIcon.png" style="height: 20px;width:20px;">報名資訊</a>
-                    <a href="../timeLine/TimeLine.html"><img src="../baseResourse/timelineIcon.png"style="height: 20px;width:20px;">時刻表</a>
-                    <a href="../trans/transInformation.html"><img src="../baseResourse/tramIcon.png" style="height: 20px;width:20px;">交通資訊</a>
-                    <a href="../friend/friendLink.html"><img src="../baseResourse/friendsIcon.png" style="height: 20px;width:20px;">友情連結</a>
-                    <a href="../Forschool/ForSchool.html"><img src="../baseResourse/informationIcon.png" style="height: 20px;width:20px;">關於東大</a>
-                    <a href="../new/new_page.html"><img src="../baseResourse/photo.png" style="height: 20px;width:20px;">圖片來源</a>
+        </div>
+        <script>
+            const NV = document.getElementById('NV');
+            const navigation = document.getElementById('navigation');
+            NV.onclick = function () {
+                NV.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </div>
+
+    <div class="Second">
+        <marquee bgcolor="#c3e77f" height="50px" scrollamount="7">
+            <img src="../baseResourse/NTTU_school.png">
+            山豬許可證正在熱賣中，請各位同學要買要快
+        </marquee>
+    </div>
+    <div class="photo_shower">
+        <ul id="images">
+            <li><img src="../baseResourse/TA.jpg"></li>
+                <li><img src="../baseResourse/TB.jpg"></li>
+                <li><img src="../baseResourse/TC.jpg"></li>
+                <li><img src="../baseResourse/TD.jpg"></li>
+                <li><img src="../baseResourse/TE.jpg"></li>
+        </ul>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#images").lightSlider({
+                    item: 3,
+                    autoWidth: true,
+                    slideMove: 1, // slidemove will be 1 if loop is true
+                    slideMargin: 0,
+
+                    addClass: '',
+                    mode: "slide",
+                    useCSS: true,
+                    cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+                    easing: 'linear', //'for jquery animation',////
+
+                    speed: 500, //ms'
+                    auto: true,
+                    loop: true,
+                    slideEndAnimation: true,
+                    pause: 2000,
+
+                    keyPress: false,
+                    controls: true,
+                    prevHtml: '',
+                    nextHtml: '',
+                });
+            });
+        </script>
+    </div>
+
+    <div class="First_page_main">
+        <div class="interaction">
+            <div class="button_in">
+                <pre style="font-size:35px;">快速瀏覽各活動的細項</pre>
+                <button class="open">開幕典禮</button>
+                <script>
+                    var btn = document.querySelector(".open")
+                    btn.onclick = function () {
+                        document.getElementById("dt1").textContent = "8:00-8:30 國歌和校歌演唱(由本校樂隊和聲樂演唱)"
+                        document.getElementById("dt2").textContent = "8:30-9:30 貴賓致詞"
+                        document.getElementById("dt3").textContent = "9:30-10:00 運動員宣誓"
+                        document.getElementById("dt4").textContent = "10:00-10:45 熱舞社+管絃樂隊表演"
+                        document.getElementById("dt5").textContent = "11:30-12:00 縣長勉勵"
+
+                    }
+                </script>
+                <button class="pig">山豬跨欄障礙賽</button>
+                <script>
+                    var btn = document.querySelector(".pig")
+                    btn.onclick = function () {
+                        document.getElementById("dt1").textContent = "13:30-14:00 山豬跨欄障礙賽男子組預賽"
+                        document.getElementById("dt2").textContent = "14:00-14:30 山豬跨欄障礙賽女子組預賽"
+                        document.getElementById("dt3").textContent = "14:30-15:00 山豬跨欄障礙賽男子組決賽"
+                        document.getElementById("dt4").textContent = "15:00-15:30 山豬跨欄障礙賽女子組決賽"
+                        document.getElementById("dt5").textContent = "15:30-16:00 山豬跨欄障礙賽頒獎"
+                    }
+                </script>
+                <button class="mt">環校馬拉松</button>
+                <script>
+                    var btn = document.querySelector(".mt")
+                    btn.onclick = function () {
+                        document.getElementById("dt1").textContent = "8:00-8:30 暖身操"
+                        document.getElementById("dt2").textContent = "8:30 馬拉鬆開跑"
+                        document.getElementById("dt3").textContent = "8:30-11:30 馬拉松前進時間"
+                        document.getElementById("dt4").textContent = "(11:30)停止計劃時間"
+                        document.getElementById("dt5").textContent = "11:30-12:00 馬拉松領獎"
+                    }
+                </script>
+                <button class="swim">泳渡鏡心湖</button>
+                <script>
+                    var btn = document.querySelector(".swim")
+                    btn.onclick = function () {
+                        document.getElementById("dt1").textContent = "14:00-14:15 場地清理"
+                        document.getElementById("dt2").textContent = "14:45-15:00 泳渡鏡心湖女子組"
+                        document.getElementById("dt3").textContent = "15:00-15:10 場地清理"
+                        document.getElementById("dt4").textContent = "15:10-15:40 泳渡鏡心湖男子組"
+                        document.getElementById("dt5").textContent = "15:40-16:00 泳渡鏡心湖頒獎"
+                    }
+                </script>
+                 <button class="catch">抓捕靜心湖水怪</button>
+                 <script>
+                     var btn = document.querySelector(".catch")
+                     btn.onclick = function () {
+                        document.getElementById("dt1").textContent = "8:30-9:15 抓捕靜心湖水怪孩童組"
+                        document.getElementById("dt2").textContent = "9:15-10:00 抓捕靜心湖水怪親子組"
+                        document.getElementById("dt3").textContent = "10:00-10:30 抓捕靜心湖水怪男子組"
+                        document.getElementById("dt4").textContent = "10:30-11:00 抓捕靜心湖水怪女子組"
+                        document.getElementById("dt5").textContent = "11:00-11:30 抓捕靜心湖水怪領獎"
+                     }
+                 </script>
+                  <button class="close">閉幕典禮</button>
+                  <script>
+                      var btn = document.querySelector(".close")
+                      btn.onclick = function () {
+                        document.getElementById("dt1").textContent = "11:30-11:40 貴賓致詞"
+                        document.getElementById("dt2").textContent = "11:40-11:55 抽獎"
+                        document.getElementById("dt3").textContent = "11:55-12:00 禮成-奏樂"
+                        document.getElementById("dt4").textContent = ""
+                        document.getElementById("dt5").textContent = ""
+                      }
+                  </script>
+                <div class="text_in">
+                    各時段活動細項:
+                    <p id="dt1"></p>
+                    <p id="dt2"></p>
+                    <p id="dt3"></p>
+                    <p id="dt4"></p>
+                    <p id="dt5"></p>
                 </div>
             </div>
-            <script>
-                const NV=document.getElementById('NV');
-                const navigation=document.getElementById('navigation');
-                NV.onclick=function(){
-                    NV.classList.toggle('active');
-                    navigation.classList.toggle('active');
-                }
-            </script>
+        </div>
+        <div class="table_in">
+            <img src="timeTable.png">
         </div>
 
-        <div class="Second">
-            <marquee bgcolor="#c3e77f" height="50px" scrollamount="7">
-                <img src="../baseResourse/NTTU_school.png">
-                山豬許可證正在熱賣中，請各位同學要買要快
-            </marquee>
-        </div>
-        <div class="photo_shower">
-            <ul id="images">
-                <li><img src="../baseResourse/TA.jpg"></li>
-                <li><img src="../baseResourse/TB.jpg"></li>
-                <li><img src="../baseResourse/TC.jpg"></li>
-                <li><img src="../baseResourse/TA.jpg"></li>
-                <li><img src="../baseResourse/TB.jpg"></li>
-                <li><img src="../baseResourse/TC.jpg"></li>
-                <li><img src="../baseResourse/TA.jpg"></li>
-                <li><img src="../baseResourse/TB.jpg"></li>
-                <li><img src="../baseResourse/TC.jpg"></li>
-                <li><img src="../baseResourse/TA.jpg"></li>
-                <li><img src="../baseResourse/TB.jpg"></li>
-                <li><img src="../baseResourse/TC.jpg"></li>
-            </ul>
-            <script type="text/javascript">
-                $(document).ready(function() {
-                    $("#images").lightSlider({
-                        item: 3,
-                        autoWidth: true,
-                        slideMove: 1, // slidemove will be 1 if loop is true
-                        slideMargin: 10,
-                 
-                        addClass: '',
-                        mode: "slide",
-                        useCSS: true,
-                        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-                        easing: 'linear', //'for jquery animation',////
-                 
-                        speed: 500, //ms'
-                        auto: true,
-                        loop: true,
-                        slideEndAnimation: true,
-                        pause: 2000,
-                 
-                        keyPress: false,
-                        controls: true,
-                        prevHtml: '',
-                        nextHtml: '',
-                    });
-                });
-            </script>
-        </div>
+    </div>
 
-        <div class="First_page_main">
-            <div class="table_in">
-                <table class="text_in">
-                    <thead>
-                        <tr>
-                            <th colspan="2">活動時刻表</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2023/3/5 8:00-12:00</td>
-                            <td>開幕典禮</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/5 13:00-13:30</td>
-                            <td>山豬跨欄障礙賽檢錄</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/5 13:00-16:00</td>
-                            <td>山豬跨欄障礙賽</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/6 7:00-8:00</td>
-                            <td>環校馬拉松檢錄</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/6 8:00-11:00</td>
-                            <td>環校馬拉松</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/6 13:30-14:00</td>
-                            <td>泳渡鏡心湖檢錄</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/6 14:00-16:00</td>
-                            <td>泳渡鏡心湖</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/7 8:00-8:30</td>
-                            <td>抓捕靜心湖水怪檢錄</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/7 8:30-11:30</td>
-                            <td>抓捕靜心湖水怪</td>
-                        </tr>
-                        <tr>
-                            <td>2023/3/7 11:30-12:00</td>
-                            <td>閉幕典禮</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-            </div>
-        </div>
-        
-        <div class="bottom">
-            <!-- 
+
+
+    <div class="bottom">
+        <!-- 
             <a href="https://www.flaticon.com/free-icons/message" title="message icons">Message icons created by Freepik - Flaticon</a>
             <br>
             <a href="https://www.flaticon.com/free-icons/timeline" title="timeline icons">Timeline icons created by nahumam - Flaticon</a>
@@ -161,10 +198,13 @@
             <a href="https://www.flaticon.com/free-icons/picture" title="picture icons">Picture icons created by Pixel perfect - Flaticon</a>
             <br>
             <a href='https://.pngtree.com/so/棕色野豬'>棕色野豬 png來自 .pngtree.com/</a>-->
-            <div>
-                <p>FERGUS-製作/版權所有©2020</p>
-                <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100087757014402&amp;is_tour_dismissed=true" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
-            </div>
+        <div>
+            <p>FERGUS-製作/版權所有©2020</p>
+            <div class="fb-like"
+                data-href="https://www.facebook.com/profile.php?id=100087757014402&amp;is_tour_dismissed=true"
+                data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
