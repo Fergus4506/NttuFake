@@ -12,7 +12,7 @@
 }
 .First_page_main button{
     transition-duration: 0.5s;
-    background-color: #61e4b8;
+    background-color: #4fd4a8;
     font-size: 35px;
     border-radius: 10px;
     border: 2px #8a532f outset;
@@ -22,10 +22,13 @@
     background-color: #b7f1de;
 }
 .First_page_main .Title_word{
+    margin-top: 10px;
     font-size: 50px;
     border: 5px #1f3f34 solid;
-    border-radius: 5px;
-    background-color: #7fec64;
+    background-color: #f3bd27;
+}
+.buttom{
+    margin-bottom: 10px;
 }
 .bottom{
     clear: both;

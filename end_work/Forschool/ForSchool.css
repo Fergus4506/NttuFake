@@ -16,9 +16,6 @@
 .text_in a{
     text-decoration: none;
 }
-.text_in a:hover{
-    background-color: aquamarine;
-}
 .bottom{
     clear: both;
     background-color: #C6B766;

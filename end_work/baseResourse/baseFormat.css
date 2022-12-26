@@ -110,6 +110,7 @@ body .FirstLine .t a:visited{
 }
 marquee{
     font-size: 25px;
+    margin-bottom: -5px;
 }
 .Second marquee img{
     height: 25px;
@@ -118,6 +119,7 @@ marquee{
 }
 .Second{
     z-index:10;
+    margin-bottom: -5px;
 }
 #images img{
     height: 200px;

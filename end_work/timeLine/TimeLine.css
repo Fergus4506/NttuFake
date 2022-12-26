@@ -24,8 +24,14 @@
     transition-duration: 0.5s;
     background-color: #61e4b8;
     font-size: 35px;
-    border-radius: 10px;
-    border: 2px #8a532f outset;
+    border: 3px #8a532f outset;
+}
+.First_page_main button:hover{
+    background-color: #b7f1de;
+}
+.First_page_main .button_in{
+    border: #8a532f;
+    width: 600px;
 }
 .bottom{
     clear: both;
