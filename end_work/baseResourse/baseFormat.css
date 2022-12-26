@@ -40,7 +40,7 @@ body .FirstLine .t a:visited{
     transition: 0.2s;
     overflow: hidden;
     transform: translateZ(20px);
-    z-index: 20;
+    z-index: 100;
     float: right;
     display:block;
     line-height:35px;
@@ -51,7 +51,7 @@ body .FirstLine .t a:visited{
     height: 275px;
     border-radius: 15px;
     transform: translateZ(20px);
-    z-index: 20;
+    z-index: 100;
 }
 #NV a{
     position: relative;
