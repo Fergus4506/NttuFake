@@ -1,5 +1,5 @@
 .First_page_main{
-    background-color: #9DC383;
+    background-color: #F7AF9D;
     /*內容被景色*/
     height: auto;
     width:100%;
@@ -13,7 +13,7 @@
 }
 .First_page_main button{
     transition-duration: 0.5s;
-    background-color: #4fd4a8;
+    background-color: #ffedb1;
     /*按鈕被景色_遠本*/
     font-size: 35px;
     border-radius: 10px;
@@ -22,7 +22,7 @@
     float: auto;
 }
 .First_page_main button:hover{
-    background-color: #b7f1de;
+    background-color: #ffeaee
     /*滑鼠放在按鈕上的顏色*/
 }
 .First_page_main .Title_word{
@@ -30,7 +30,7 @@
     font-size: 50px;
     border: 5px #1f3f34 solid;
     /*內容邊線顏色*/
-    background-color: #f3bd27;
+    background-color: #ffebc3;
     /*內容標頭顏色*/
 }
 .buttom{
@@ -38,7 +38,7 @@
 }
 .bottom{
     clear: both;
-    background-color: #C6B766;
+    background-color: #ff977a;
     /*底部區域顏色*/
     height: 75px;
     width: 100%;

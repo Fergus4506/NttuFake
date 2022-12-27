@@ -1,14 +1,14 @@
 body{
     margin: 0 10%;
     padding: 0;
-    background-color:#8a663d;
+    background-color:#EBF5DF;
     /*背景色*/
 }
 body .FirstLine{
     display: flex;
     width: 100%;
     height: 75px;
-    background-color:#F3F9D2 ;
+    background-color:#f9de85;
     /*第一行的背景色*/
 
     border-top-left-radius:15px ;
@@ -133,7 +133,7 @@ marquee{
     margin: auto;
 }
 .photo_shower{
-    background-color: #C0D684;
+    background-color: #FBD1A2;
     /*圖片瀏覽器背景*/   
     margin: 0;
 }

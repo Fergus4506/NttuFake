@@ -1,5 +1,5 @@
 .First_page_main{
-    background-color: #9DC383;
+    background-color: #ffd6d6;
     height: auto;
     width:100%;
 }
@@ -22,12 +22,12 @@
 }
 .First_page_main button{
     transition-duration: 0.5s;
-    background-color: #61e4b8;
+    background-color: #ffddc1;
     font-size: 35px;
     border: 3px #8a532f outset;
 }
 .First_page_main button:hover{
-    background-color: #b7f1de;
+    background-color: #fddfff;
 }
 .First_page_main .button_in{
     border: #8a532f;
@@ -35,7 +35,7 @@
 }
 .bottom{
     clear: both;
-    background-color: #C6B766;
+    background-color: #f7e582;
     height: 75px;
     width: 100%;
     display: flex;

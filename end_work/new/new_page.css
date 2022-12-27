@@ -1,5 +1,5 @@
 .First_page_main{
-    background-color: #9DC383;
+    background-color: #ffebc3;
     height: auto;
     width:100%;
     display: flex;
@@ -15,7 +15,7 @@
 }
 .bottom{
     clear: both;
-    background-color: #C6B766;
+    background-color: #e8c18f;
     height: 75px;
     width: 100%;
     display: flex;

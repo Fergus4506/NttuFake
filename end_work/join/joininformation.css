@@ -1,5 +1,5 @@
 .First_page_main{
-    background-color: #9DC383;
+    background-color: #d1b8ee;
     height:auto;
     width:100%;
     display: flex;
@@ -8,21 +8,21 @@
 }
 .First_page_main button{
     transition-duration: 0.5s;
-    background-color: #61e4b8;
+    background-color: #ffffbc;
     font-size: 35px;
     border-radius: 10px;
     border: 2px #8a532f outset;
     float: auto;
 }
 .First_page_main button:hover{
-    background-color: #b7f1de;
+    background-color: #fcfcec;
 }
 .First_page_main .button_in{
     margin-top: 20px;
 }
 .text_in {
     border: 5px #8a532f dotted;
-    background-color: #6FD08C;
+    background-color: #fffaca;
     width: 700px;
     font-size: 24px;
     display: flex;
@@ -50,7 +50,7 @@ form .needChange{
 }
 .bottom{
     clear: both;
-    background-color: #C6B766;
+    background-color: #eedc77;
     height: 75px;
     width: 100%;
     display: flex;
