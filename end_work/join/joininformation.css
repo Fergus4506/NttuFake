@@ -48,6 +48,9 @@ form{
 form .needChange{
     height: 30px;
 }
+form input{
+    margin: 5px;
+}
 .bottom{
     clear: both;
     background-color: #eedc77;
